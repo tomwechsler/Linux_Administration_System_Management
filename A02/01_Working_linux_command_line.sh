@@ -10,8 +10,10 @@ ls -l $(tty)
 #Lets have a look at the metadata
 
 #Install tree
-
 sudo dnf install -y tree
+
+#If you get some locale warnings use:
+export LC_ALL="en_US.UTF-8"
 
 #With tree we will have a look at the FHS (Filesystem Hierarchy Standard)
 tree -L 1 /
