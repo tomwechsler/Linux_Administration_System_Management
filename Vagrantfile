@@ -3,19 +3,20 @@
 
 #Place Vagrantfile in the directory you run vagrant from.
 
-#setting for the alma VM
+#setting for the almalinux VM
 Vagrant.configure("2") do |config|
   #config.vm.box = "base"
 
-  config.vm.define "alma" do |alma|
-    alma.vm.provider "virtualbox" do |vb_alma|
-      vb_alma.memory = "2048"
-      vb_alma.cpus = "2"
+  config.vm.define "almalinux" do |almalinux|
+    almalinux.vm.provider "virtualbox" do |vb_almalinux|
+      vb_almalinux.memory = "2048"
+      vb_almalinux.cpus = "2"
     end
 
-    alma.vm.box = "almalinux/8"
-    alma.vm.hostname = "alma"
-	  alma.vm.network "private_network", ip: "192.168.56.101"
+    almalinux.vm.box = "almalinux/8"
+    almalinux.vm.hostname = "almalinux"
+	  almalinux.vm.provision "ansible", playbook: "deploy.yaml"
+    almalinux.vm.network "private_network", ip: "192.168.56.101"
 
   end
 
@@ -28,7 +29,8 @@ Vagrant.configure("2") do |config|
 		
 	  ubuntu.vm.box = "ubuntu/focal64"
     ubuntu.vm.hostname = "ubuntu"
-    ubuntu.vm.network "private_network", ip: "192.168.56.102"
+    ubuntu.vm.provision "ansible", playbook: "deploy.yaml"
+	  ubuntu.vm.network "private_network", ip: "192.168.56.102"
 	
   end
  
@@ -41,7 +43,8 @@ Vagrant.configure("2") do |config|
 	
 	  opensuse.vm.box = "opensuse/Leap-15.2.x86_64"
     opensuse.vm.hostname = "opensuse"
-	  opensuse.vm.network "private_network", ip: "192.168.56.103"
+	  opensuse.vm.provision "ansible", playbook: "deploy.yaml"
+    opensuse.vm.network "private_network", ip: "192.168.56.103"
 	
   end
   
