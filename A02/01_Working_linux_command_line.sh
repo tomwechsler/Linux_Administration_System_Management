@@ -2,7 +2,7 @@
 tty
 
 #Get details about it
-ls -l /dev/pts0
+ls -l /dev/pts/0
 
 #In another way
 ls -l $(tty)
@@ -14,7 +14,6 @@ ls -l $(tty)
 sudo dnf install -y tree
 
 #With tree we will have a look at the FHS (Filesystem Hierarchy Standard)
-
 tree -L 1 /
 
 #So then in /dev we will find devices
