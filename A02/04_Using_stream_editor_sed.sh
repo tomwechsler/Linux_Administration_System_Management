@@ -18,7 +18,7 @@ sudo vim /etc/ssh/sshd_config
 sudo sed -Ei 's/PasswordAuthentication no/PasswordAuthentication yes/'
 
 #A bit shorter
-sudo sed -Ei 's/PasswordAuthentication no/\1 yes/' /etc/ssh/sshd_config
+sudo sed -Ei 's/(PasswordAuthentication) no/\1 yes/' /etc/ssh/sshd_config
 
 #Did it work?
 sudo grep -i PasswordAuthentication /etc/ssh/sshd_config
