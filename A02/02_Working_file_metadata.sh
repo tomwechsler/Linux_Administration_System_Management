@@ -78,3 +78,10 @@ Field              Meaning
 Access             Last read
 Modify             Data last modified
 Change             Metadata last changed
+
+
+
+To maintain meatdata when copying files we can use the option -a or --archive, ownership,
+permissions and timestamps are all copied with the file.
+
+-a is equal to -dR --preserve=all
