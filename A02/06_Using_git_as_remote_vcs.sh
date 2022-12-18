@@ -50,4 +50,4 @@ ls -l project1
 
 Working in DevOps, you will certainly come across the VCS (Version Control System) git,
 allowing collaboration in development. Rather than using a hosting system such as GitHub or
-GitLabs we can create our own SSH Host. There is more on git in later courses.
+GitLabs we can create our own SSH Host.
