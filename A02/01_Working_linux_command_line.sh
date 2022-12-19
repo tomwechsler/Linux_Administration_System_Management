@@ -33,7 +33,7 @@ cd /dev
 #The working directory
 pwd
 
-#With cd without argument gets to home diretory
+#With cd without an argument it gets to home diretory
 cd
 
 #cd - gets back
