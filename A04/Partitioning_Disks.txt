@@ -1,0 +1,7 @@
+fdisk
+The command fdisk has been used traditionally in many OSs uncluding
+Linux. It is interactive and cannot be scripted.
+
+parted
+The command parted can be used interactively but also it can be 
+scripted. This is starting to become the new favorite.

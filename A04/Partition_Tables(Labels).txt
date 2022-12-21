@@ -1,0 +1,7 @@
+msdos
+The msdos partition table allows for up to 4 primary partitions
+with a maximum size of 2TB.
+
+gpt
+The gpt partition tables allows for up to 128 partitions
+per disk and a maximum size of 32EB.
