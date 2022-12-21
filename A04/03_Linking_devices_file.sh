@@ -8,7 +8,7 @@ ls /dev/loop*
 sudo losetup /dev/loop1 disk1.img
 
 #We did not see so much
-sudo losetup -f --show /dev/loop2 disk2.img
+sudo losetup -f --show disk2.img
 
 #Display the infos
 sudo losetup
