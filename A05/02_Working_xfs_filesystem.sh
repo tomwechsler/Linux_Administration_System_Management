@@ -22,6 +22,8 @@ xfs_admin -L mkt /dev/loop1p2
 #Get the infos
 xfs_info /dev/loop1p2
 
+#List the label
+xfs_admin -l /dev/loop1p2
 
 
 The xfs filesystem is the default in RHEL 8 and Alma Linux. The filesystem can be defragmented
