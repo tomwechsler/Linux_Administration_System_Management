@@ -21,7 +21,7 @@ mkfs -t btrfs /dev/loop0
 mkdir /data
 
 #Mount the device
-mount /dev/loop0 data
+mount /dev/loop0 /data
 
 #Check with df
 df -h
