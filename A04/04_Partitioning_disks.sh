@@ -1,4 +1,4 @@
-#It is in a root session the following configurations
+#It is easier in a root session
 sudo -i
 
 #List the block devices
