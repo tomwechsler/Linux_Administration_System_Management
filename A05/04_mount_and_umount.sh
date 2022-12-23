@@ -20,7 +20,7 @@ mount /dev/loop1p2 /data
 mount -t xfs
 
 #Umount
-umount /data
+umount /data2
 
 #Search the blockid
 blkid /dev/loop1p2
@@ -31,11 +31,11 @@ man fstab
 #We edit the fstab file
 vim /etc/fstab
 
-#We use the blkid for the mount /data xfs defaults 0 0
+#We use the blkid for the mount /data2 xfs defaults 0 0
 #Save and exit
 
 #We use mount
-mount /data
+mount /data2
 
 #Did it work
 mount -t xfs
