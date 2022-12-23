@@ -1,4 +1,4 @@
-#It is easier in a root session an alma
+#It is easier in a root session on alma
 sudo -i
 
 #List the tools
