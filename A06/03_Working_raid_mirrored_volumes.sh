@@ -2,7 +2,7 @@
 sudo -i
 
 #Create a new disk file
-fallocate -l 1G disk
+fallocate -l 1G disk1
 
 #Link the device to the file
 losetup -f --show disk1
