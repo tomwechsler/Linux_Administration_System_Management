@@ -24,7 +24,7 @@ partprobe /dev/loop1
 #Check with lsblk
 lsblk
 
-#Lets us parted
+#Lets use parted
 parted /dev/loop2 mklabel msdos mkpart primary 0% 50% 
 
 #The second partition (be sure to remove the mklabel)
