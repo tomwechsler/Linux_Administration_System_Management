@@ -1,0 +1,5 @@
+NFS Versions
+
+The NFS server and client are installed using the nfs-utils package as it was in previous RHEL releases. 
+A default install if NFS will disable NFSv2 and enable NFSv3 and above. Disabling NFSv3 makes the system
+more firewall friendly only needing TCP port 2049 to be opened.
