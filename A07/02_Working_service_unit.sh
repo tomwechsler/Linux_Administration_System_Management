@@ -4,9 +4,9 @@
 sudo -i
 
 #Lets setup some device files, loops and partitions
-fallocate -l 1G disk
+fallocate -l 1G disk1
 losetup /dev/loop1 disk1
-parted /dev/loop1 mklabel msdos mkpart primary 0% 50% mkpart 50% 100%
+parted /dev/loop1 mklabel msdos mkpart primary 0% 50% mkpart primary 50% 100%
 lsblk
 
 #The challenge is, this is not persistent
