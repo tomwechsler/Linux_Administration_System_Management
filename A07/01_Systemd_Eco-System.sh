@@ -1,4 +1,7 @@
-#Working on alma
+#Working on alma - All systems have been reset
+
+#If you get some locale warnings use:
+export LC_ALL="en_US.UTF-8"
 
 #If tab completion for systemctl does dit work
 sudo dnf install -y bash-completion
