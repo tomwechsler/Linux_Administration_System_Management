@@ -8,9 +8,9 @@ ss -ntl
 lsblk
 
 #Install the package
-sudo yum install targetcli
+sudo dnf install targetcli
 
-#Check the open ports
+#Check the open ports (no changes - we have not made any config)
 ss -ntl
 
 #Move in to the targetcli
