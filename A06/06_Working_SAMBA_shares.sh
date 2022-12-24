@@ -32,7 +32,7 @@ ls -Zd /data
 #SWITCH TO UBUNTU
 
 #We install the package
-sudo apt update && apt install -y cifs-utils
+sudo apt update && sudo apt install -y cifs-utils
 
 #Not mount
 sudo umount /mnt
