@@ -2,7 +2,7 @@
 sudo -i
 
 #Install the package
-yum install -y samba samba-common
+dnf install -y samba samba-common
 
 #Edit the config file
 vim /etc/samba/smb.conf 
