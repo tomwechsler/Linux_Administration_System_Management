@@ -30,7 +30,7 @@ systemctl edit losetup.service --full --force
 systemctl daemon-reload
 
 #Enable our service unit
-systemctl enable losetup.serivce
+systemctl enable losetup.service
 
 #Reboot the system
 reboot
@@ -39,4 +39,4 @@ reboot
 lsblk
 
 #If you wish to list the content
-systemctl cat losetup.serivce
+systemctl cat losetup.service
