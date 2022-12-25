@@ -31,7 +31,7 @@ systemctl start nfs-server
 #List the ports again
 ss -ntl
 
-#Just the port 2029 is important
+#Just the port 2049 is important
 
 #Check for some data
 ls /data
