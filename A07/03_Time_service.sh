@@ -29,3 +29,6 @@ sudo systemctl status systemd-timesyncd
 
 #To list the config
 cat /etc/systemd/timesyncd.conf
+
+#Shows the time server also
+sudo systemctl status systemd-timesyncd
