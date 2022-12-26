@@ -13,16 +13,16 @@ ip a s
 ip a
 
 #The route table
-ip r
+ip route
 
 #ARP cache
-ip n
+ip neigh
 
 #List just the IPv4
 ip -4 a
 
 #List the links
-ip l
+ip link
 
 #List the IPv4 for an interface
 ip -4 a s eth1
