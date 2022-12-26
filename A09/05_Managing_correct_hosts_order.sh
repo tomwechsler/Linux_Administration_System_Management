@@ -23,7 +23,7 @@ echo "Toms Web Page!" > /srv/www/htdocs/index.html
 w3m localhost
 
 #What about an external page
-w3m ford.com
+w3m cisco.com
 
 #Lets look at the name resolution order
 grep ^hosts /etc/nsswitch.conf
@@ -32,10 +32,10 @@ grep ^hosts /etc/nsswitch.conf
 cat /etc/hosts
 
 #Lets put an entry on it
-echo '127.0.0.1 www.ford.com' >> /etc/hosts
+echo '127.0.0.1 www.cisco.com' >> /etc/hosts
 
 #What have we done
-w3m www.ford.com
+w3m www.cisco.com
 
 #We change the order - this brings us direct to hosts in the file
 vim +/^hosts: /etc/nsswitch
@@ -44,7 +44,7 @@ vim +/^hosts: /etc/nsswitch
 #Save and exit
 
 #Much better
-w3m www.ford.com
+w3m www.cisco.com
 
 #This still works
 w3m opensuse
@@ -53,7 +53,7 @@ w3m opensuse
 tail /etc/hosts
 
 #We remove the entry with a vim trick (d for delete and x to save and exit vim)
-vim +"/ford/d|x" /etc/hosts
+vim +"/cisco/d|x" /etc/hosts
 
 #Lets check
 !t

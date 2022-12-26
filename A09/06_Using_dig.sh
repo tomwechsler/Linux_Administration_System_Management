@@ -3,13 +3,13 @@ sudo -i
 zypper install -y bind-utils
 
 #We use the host command
-host www.ford.com
+host www.cisco.com
 
 #With dig
-dig www.ford.com 
+dig www.cisco.com 
 
 #With a specific dns server
-dig www.ford.com @8.8.8.8
+dig www.cisco.com @8.8.8.8
 
 #A trick
-dig www.ford.com @1.0.0.1 #we use @1.1
+dig www.cisco.com @1.0.0.1 #we use @1.1
