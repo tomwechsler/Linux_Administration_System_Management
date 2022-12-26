@@ -20,4 +20,4 @@ netconfig update -f
 cat /etc/resolv.conf
 
 #Use dig
-dig www.ford.com
+dig www.cisco.com
