@@ -8,7 +8,7 @@ ip -4 address show enp0s8
 ls /etc/netplan/
 
 #Show the content
-cat vim /etc/netplan/50-cloud-init.yaml
+cat /etc/netplan/50-cloud-init.yaml
 cat /etc/netplan/50-vagrant.yaml
 
 #Show the infos
@@ -17,7 +17,7 @@ netplan ip leases enp0s3
 #Set a second IP
 vim /etc/netplan/50-vagrant.yaml
 
-#- 172.16.56.102
+#- 172.16.56.102/24
 
 #Lets try the config
 netplan try --timeout=20
