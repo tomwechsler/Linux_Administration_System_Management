@@ -8,7 +8,7 @@ ls /etc/apt/sources*
 cat /etc/apt/sources.list
 
 #Some much text
-grep -vE '^(#|$)' cat /etc/apt/sources.list
+grep -vE '^(#|$)' /etc/apt/sources.list
 
 #The last metadata update
 stat -c %z /var/lib/apt/periodic/update-success-stamp
@@ -23,7 +23,7 @@ stat -c %z /var/lib/apt/periodic/update-success-stamp
 apt search tree
 
 #Much better
-apt search tree '^tree$'
+apt search '^tree$'
 
 #Install tree
 apt install -y tree
