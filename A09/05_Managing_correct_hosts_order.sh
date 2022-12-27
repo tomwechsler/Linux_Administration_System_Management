@@ -38,7 +38,7 @@ echo '127.0.0.1 www.cisco.com' >> /etc/hosts
 w3m www.cisco.com
 
 #We change the order - this brings us direct to hosts in the file
-vim +/^hosts: /etc/nsswitch
+vim +/^hosts: /etc/nsswitch.conf
 
 #Change the order from files dns to dns files
 #Save and exit
