@@ -7,7 +7,7 @@ ls /etc/apt/sources*
 #Cat the config file
 cat /etc/apt/sources.list
 
-#Some much text
+#To much text
 grep -vE '^(#|$)' /etc/apt/sources.list
 
 #The last metadata update
