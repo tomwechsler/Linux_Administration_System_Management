@@ -1,6 +1,6 @@
 # Linux Administration: System Management
 
-Working with different distributions (Ubuntu, openSUSE and RedHat)!
+Working with different distributions (Ubuntu, openSUSE and RedHat - CompTIA Linux+ XK0-005)!
 
 ## Content of the sections
 
